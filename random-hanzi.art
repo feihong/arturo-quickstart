@@ -1,0 +1,6 @@
+print to :integer `你`  ; 20320
+print to :char 20320 ; doesn't work
+
+; problem seems to be in https://github.com/arturo-lang/arturo/blob/652a4c2b510f0735ea0f5fc3e9b9d655fd1ac540/src/library/Converters.nim#L65
+; instead of newChar(chr(y.i))
+; it should be toUTF8(Rune(num))
