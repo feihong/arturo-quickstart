@@ -1,0 +1,16 @@
+dict: #[
+  "hello": "你好"
+  "world": "世界"
+  "goodbye": "再见"
+  "universe": "宇宙"
+]
+
+translate: function [s][
+  words: split.words s
+  words: map words [w][(in? w keys dict)? -> get dict w -> w]
+  join.with:" " words
+]
+
+print translate "hello world"
+print translate "goodbye universe"
+print translate "greetings caterpillar"

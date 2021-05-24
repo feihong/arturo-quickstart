@@ -1,6 +1,6 @@
 # Feihong's Arturo quickstart
 
-# Installation 
+# Installation
 
     curl -sSL https://get.arturo-lang.io | sh
 
@@ -14,6 +14,11 @@ Start REPL
 
     arturo
 
+Run script
+
+    arturo hello.art
+
 ## Links
 
 - [Install the easy way](https://arturo-lang.io/documentation/getting-started/#the-easy-way)
+- [Library](https://arturo-lang.io/documentation/library/)
